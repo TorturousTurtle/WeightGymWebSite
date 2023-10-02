@@ -1,0 +1,51 @@
+export let blogs = [
+    {
+        id: "1",
+        title: "What is Weight Gym!?",
+        date: "Thu Sep 28 2023 16:14:16 GMT-0400",
+        image: null,
+        content: "I&apos;ve been picking up iron objects and putting them down for something like 15 years now. Max joined me on my gym battles a few years back, so you could say we&apos;ve got a little bit of experience when it comes to good ol&apos; fashion weight lifting.<br><br>I&apos;ve been in the gym with all types of people; from super serious gym-atical, juiced up lunkheads to your “there in January, gone by February” gym goer.  Both extremes bothered me because there&apos;s nothing worse than working out in a room full people who either take themselves too seriously, or worse, those that don&apos;t take it seriously at all. Yeah I love working out.  Yeah I love trying to be healthy.  But my world doesn&apos;t revolve around it and it&apos;s not the only thing in my life, just an enjoyable part.  And I know I&apos;m not the only person who thinks this way.<br><br>And that&apos;s who we made Weight Gym! for.   The person who enjoys going to the gym multiple times a week. The person who loves the feel of that pump you get when they&apos;re pushing their body to new limits. Those who love breaking their own personal bests, and seeing the changes their hard work has gained them.The people who aren&apos;t trying to be IFBB pros, who don&apos;t want to eat 5 meals a day (though honestly, it&apos;s not all that bad!), and aren&apos;t pumping their bodies full of chemicals to become unnatural monsters.<br><br>We have fun at the gym. We crack jokes between sets. We grunt and sweat and sometimes smell bad. We make new friends and encourage each other to be better. That&apos;s why Max and I started this company. We wanted to embrace that fun, hard working spirit of those people at all stages of their fitness development, and give them something fun to motivate them on their journey.<br><br>We&apos;re going to have a lot of fun.  I&apos;ll be writing more articles, workout plans, and even hosting a podcast.  I can&apos;t wait to see where this crazy idea takes us.  I&apos;ll see you guys at the gym, and as always, Less Thinkin&apos; and More Healthin&apos;!<br><br>-BV",
+    },
+    {
+        id: "2",
+        title: "The Dao of a fat guy",
+        date: "Thu Sep 28 2023 16:16:16 GMT-0400",
+        image: null,
+        content: "Huge disclaimer up front: anything I write, say, or demonstrate is nothing new.  I have no secrets, no one weird tricks.  Why even read any of this?  ....Good question.  Wait!  I have a reason, because you can learn from my mistakes.<br><br>When I challenged myself to lose 100lbs in a year, I looked for resources to help me with it.  And I never did find one that resonated with me.  That may be true for you as well.  Hopefully this resource does.<br><br>At the highest level we can say that the 3 pillars to weight loss are:<br><br>-  Diet<br>-  Physical Activity<br>-  Mental Hygiene<br><br>All three are important and all three are interconnected.  Posts will usually fall into one of these three pillars.  We&apos;ll start with a deeper dive into diet next.<br><br>-MC",
+    },
+    {
+        id: "3",
+        title: "Diet Will Conquer All",
+        date: "Thu Sep 28 2023 16:18:16 GMT-0400",
+        image: null,
+        content: "I&apos;ve gone over what I consider the three pillars of healthy weightloss: Diet, Physical Activity, and Mental Hygiene.  All three are equally important but I think there&apos;s a good order of operation to tackle them.  I always suggest people start with their diets<br><br>The reason being is that small changes in diet can yield results quickly.  Because I&apos;m an impatient American, I want to get the best results the fast way I can with the least amount of effort.  I&apos;m going to put a HUGE DISCLAIMER:  Before you make radical changes to your diet and working out three times a day, talk to your doctor.  They will be able to provide you better info and provide strategies more than I, a guy on the internet<br><br>With that out of the way, the biggest piece of advice I&apos;ll say is master your diet first.  This seems redundant but many people try to take on changing their diet, increasing their physical activity, and being more mentally fit all at once.  Noble and admiral but that&apos;s a recipe for disaster.  We can handle only so much change before something falls apart.  It&apos;s better to start slow and master one pillar before taking on the others.<br><br>-MC",
+    },
+    {
+        id: "4",
+        title: "Diet Will Conquer All",
+        date: "Thu Sep 28 2023 16:18:16 GMT-0400",
+        image: null,
+        content: "I&apos;ve gone over what I consider the three pillars of healthy weightloss: Diet, Physical Activity, and Mental Hygiene.  All three are equally important but I think there&apos;s a good order of operation to tackle them.  I always suggest people start with their diets<br><br>The reason being is that small changes in diet can yield results quickly.  Because I&apos;m an impatient American, I want to get the best results the fast way I can with the least amount of effort.  I&apos;m going to put a HUGE DISCLAIMER:  Before you make radical changes to your diet and working out three times a day, talk to your doctor.  They will be able to provide you better info and provide strategies more than I, a guy on the internet<br><br>With that out of the way, the biggest piece of advice I&apos;ll say is master your diet first.  This seems redundant but many people try to take on changing their diet, increasing their physical activity, and being more mentally fit all at once.  Noble and admiral but that&apos;s a recipe for disaster.  We can handle only so much change before something falls apart.  It&apos;s better to start slow and master one pillar before taking on the others.<br><br>-MC",
+    },
+    {
+        id: "5",
+        title: "The Dao of a fat guy",
+        date: "Thu Sep 28 2023 16:16:16 GMT-0400",
+        image: null,
+        content: "Huge disclaimer up front: anything I write, say, or demonstrate is nothing new.  I have no secrets, no one weird tricks.  Why even read any of this?  ....Good question.  Wait!  I have a reason, because you can learn from my mistakes.<br><br>When I challenged myself to lose 100lbs in a year, I looked for resources to help me with it.  And I never did find one that resonated with me.  That may be true for you as well.  Hopefully this resource does.<br><br>At the highest level we can say that the 3 pillars to weight loss are:<br><br>-  Diet<br>-  Physical Activity<br>-  Mental Hygiene<br><br>All three are important and all three are interconnected.  Posts will usually fall into one of these three pillars.  We&apos;ll start with a deeper dive into diet next.<br><br>-MC",
+    },
+    {
+        id: "6",
+        title: "Diet Will Conquer All",
+        date: "Thu Sep 28 2023 16:18:16 GMT-0400",
+        image: null,
+        content: "I&apos;ve gone over what I consider the three pillars of healthy weightloss: Diet, Physical Activity, and Mental Hygiene.  All three are equally important but I think there&apos;s a good order of operation to tackle them.  I always suggest people start with their diets<br><br>The reason being is that small changes in diet can yield results quickly.  Because I&apos;m an impatient American, I want to get the best results the fast way I can with the least amount of effort.  I&apos;m going to put a HUGE DISCLAIMER:  Before you make radical changes to your diet and working out three times a day, talk to your doctor.  They will be able to provide you better info and provide strategies more than I, a guy on the internet<br><br>With that out of the way, the biggest piece of advice I&apos;ll say is master your diet first.  This seems redundant but many people try to take on changing their diet, increasing their physical activity, and being more mentally fit all at once.  Noble and admiral but that&apos;s a recipe for disaster.  We can handle only so much change before something falls apart.  It&apos;s better to start slow and master one pillar before taking on the others.<br><br>-MC",
+    },
+    {
+        id: "7",
+        title: "Diet Will Conquer All",
+        date: "Thu Sep 28 2023 16:18:16 GMT-0400",
+        image: null,
+        content: "I&apos;ve gone over what I consider the three pillars of healthy weightloss: Diet, Physical Activity, and Mental Hygiene.  All three are equally important but I think there&apos;s a good order of operation to tackle them.  I always suggest people start with their diets<br><br>The reason being is that small changes in diet can yield results quickly.  Because I&apos;m an impatient American, I want to get the best results the fast way I can with the least amount of effort.  I&apos;m going to put a HUGE DISCLAIMER:  Before you make radical changes to your diet and working out three times a day, talk to your doctor.  They will be able to provide you better info and provide strategies more than I, a guy on the internet<br><br>With that out of the way, the biggest piece of advice I&apos;ll say is master your diet first.  This seems redundant but many people try to take on changing their diet, increasing their physical activity, and being more mentally fit all at once.  Noble and admiral but that&apos;s a recipe for disaster.  We can handle only so much change before something falls apart.  It&apos;s better to start slow and master one pillar before taking on the others.<br><br>-MC",
+    },
+];

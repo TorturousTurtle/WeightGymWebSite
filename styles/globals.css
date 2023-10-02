@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@font-face {
+  font-family: "Monoton";
+  src: url('/fonts/Monoton-Regular.ttf');
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

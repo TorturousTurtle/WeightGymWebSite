@@ -1,0 +1,8 @@
+- Create "Create Account" page
+- Create "Account" page with user data
+- Implement input validation for all text fields
+- Optimize styling for smaller screens
+- Implement Tests
+- Add Head metadata
+- Move firebase calls to API folder
+- Add animations
