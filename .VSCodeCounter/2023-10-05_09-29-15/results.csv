@@ -1,0 +1,53 @@
+"filename", "language", "TypeScript", "TypeScript JSX", "JSON with Comments", "JavaScript", "JSON", "Markdown", "CSS", "comment", "blank", "total"
+"/Users/benjaminverrill/Code Projects/weightgymsite/.eslintrc.json", "JSON with Comments", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"/Users/benjaminverrill/Code Projects/weightgymsite/README.md", "Markdown", 0, 0, 0, 0, 0, 25, 0, 0, 16, 41
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/About.tsx", "TypeScript JSX", 0, 2, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/AppStore.tsx", "TypeScript JSX", 0, 27, 0, 0, 0, 0, 0, 0, 3, 30
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/AppStoreFooter.tsx", "TypeScript JSX", 0, 21, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Card.tsx", "TypeScript JSX", 0, 37, 0, 0, 0, 0, 0, 0, 5, 42
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/ContactForm.tsx", "TypeScript JSX", 0, 2, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Footer.tsx", "TypeScript JSX", 0, 57, 0, 0, 0, 0, 0, 0, 3, 60
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Latest.tsx", "TypeScript JSX", 0, 34, 0, 0, 0, 0, 0, 0, 3, 37
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Layout.tsx", "TypeScript JSX", 0, 14, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Navbar.test.tsx", "TypeScript JSX", 0, 18, 0, 0, 0, 0, 0, 0, 4, 22
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Navbar.tsx", "TypeScript JSX", 0, 151, 0, 0, 0, 0, 0, 0, 5, 156
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Origins.test.tsx", "TypeScript JSX", 0, 8, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/Origins.tsx", "TypeScript JSX", 0, 25, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/benjaminverrill/Code Projects/weightgymsite/components/blog/BlogCard.tsx", "TypeScript JSX", 0, 37, 0, 0, 0, 0, 0, 0, 5, 42
+"/Users/benjaminverrill/Code Projects/weightgymsite/firebase/firebaseConfig.js", "JavaScript", 0, 0, 0, 17, 0, 0, 0, 0, 3, 20
+"/Users/benjaminverrill/Code Projects/weightgymsite/interfaces/blog-interface.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"/Users/benjaminverrill/Code Projects/weightgymsite/interfaces/blog-props-interface.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/benjaminverrill/Code Projects/weightgymsite/interfaces/user-interface.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 1, 37
+"/Users/benjaminverrill/Code Projects/weightgymsite/interfaces/workout-interface.ts", "TypeScript", 12, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/benjaminverrill/Code Projects/weightgymsite/next.config.js", "JavaScript", 0, 0, 0, 4, 0, 0, 0, 1, 2, 7
+"/Users/benjaminverrill/Code Projects/weightgymsite/package-lock.json", "JSON", 0, 0, 0, 0, 16664, 0, 0, 0, 1, 16665
+"/Users/benjaminverrill/Code Projects/weightgymsite/package.json", "JSON", 0, 0, 0, 0, 47, 0, 0, 0, 1, 48
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/_app.tsx", "TypeScript JSX", 0, 13, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/_document.tsx", "TypeScript JSX", 0, 12, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/account/index.tsx", "TypeScript JSX", 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/api/contact-form.ts", "TypeScript", 38, 0, 0, 0, 0, 0, 0, 0, 4, 42
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/Blog.test.tsx", "TypeScript JSX", 0, 11, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/[blogId].tsx", "TypeScript JSX", 0, 105, 0, 0, 0, 0, 0, 5, 14, 124
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/index.tsx", "TypeScript JSX", 0, 76, 0, 0, 0, 0, 0, 3, 8, 87
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/new-blog.tsx", "TypeScript JSX", 0, 101, 0, 0, 0, 0, 0, 22, 6, 129
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/contact.tsx", "TypeScript JSX", 0, 104, 0, 0, 0, 0, 0, 0, 6, 110
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/create-account.tsx", "TypeScript JSX", 0, 168, 0, 0, 0, 0, 0, 0, 4, 172
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/faq.tsx", "TypeScript JSX", 0, 17, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/index.tsx", "TypeScript JSX", 0, 18, 0, 0, 0, 0, 0, 0, 3, 21
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/login.test.tsx", "TypeScript JSX", 0, 11, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/login.tsx", "TypeScript JSX", 0, 127, 0, 0, 0, 0, 0, 10, 8, 145
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/privacypolicy.tsx", "TypeScript JSX", 0, 194, 0, 0, 0, 0, 0, 0, 3, 197
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/shop/index.tsx", "TypeScript JSX", 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/benjaminverrill/Code Projects/weightgymsite/pages/tos.tsx", "TypeScript JSX", 0, 151, 0, 0, 0, 0, 0, 0, 3, 154
+"/Users/benjaminverrill/Code Projects/weightgymsite/postcss.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"/Users/benjaminverrill/Code Projects/weightgymsite/store/user-context.tsx", "TypeScript JSX", 0, 98, 0, 0, 0, 0, 0, 3, 14, 115
+"/Users/benjaminverrill/Code Projects/weightgymsite/styles/globals.css", "CSS", 0, 0, 0, 0, 0, 0, 29, 0, 5, 34
+"/Users/benjaminverrill/Code Projects/weightgymsite/tailwind.config.ts", "TypeScript", 26, 0, 0, 0, 0, 0, 0, 0, 2, 28
+"/Users/benjaminverrill/Code Projects/weightgymsite/test-data/test-blogs.ts", "TypeScript", 51, 0, 0, 0, 0, 0, 0, 0, 0, 51
+"/Users/benjaminverrill/Code Projects/weightgymsite/tests/firebase.setup.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 2, 3, 14
+"/Users/benjaminverrill/Code Projects/weightgymsite/tests/firebaseAuthMock.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/benjaminverrill/Code Projects/weightgymsite/tests/jest.config.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 3, 3, 16
+"/Users/benjaminverrill/Code Projects/weightgymsite/tests/jest.setup.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/benjaminverrill/Code Projects/weightgymsite/tsconfig.json", "JSON with Comments", 0, 0, 18, 0, 0, 0, 0, 5, 0, 23
+"/Users/benjaminverrill/Code Projects/weightgymsite/utilities/image-array.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"Total", "-", 200, 1651, 21, 27, 16711, 25, 29, 54, 169, 18887

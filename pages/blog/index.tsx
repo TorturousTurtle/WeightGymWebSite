@@ -7,6 +7,7 @@ import { FaPlus } from "react-icons/fa";
 import { Blog } from "../../interfaces/blog-interface";
 import { BlogProps } from "../../interfaces/blog-props-interface";
 import BlogCard from "../../components/blog/BlogCard";
+import Head from "next/head";
 
 const Blog: React.FC<BlogProps> = (props) => {
   const [blogList, setBlogList] = useState<Blog[] | undefined>(undefined);
@@ -22,6 +23,11 @@ const Blog: React.FC<BlogProps> = (props) => {
   }, [props.blogs]);
 
   return (
+    <>
+    <Head>
+      <title>Weight Gym! - Blogs</title>
+      <meta name="description" content='Check out Weight Gyms! blog page to get advice on how to keep your workouts effective but still fun' />
+    </Head>
     <div className="flex flex-col p-10">
       <h1 className="font-monoton text-6xl text-wg-green text-center">
         The&nbsp;&nbsp;Blog&nbsp;&nbsp;Page
@@ -45,7 +51,7 @@ const Blog: React.FC<BlogProps> = (props) => {
           </div>
         ))}
       </div>
-      {/* TODO - change isLoggedIn to userData.role === "Administrator" */}
+      {/* TODO: - change isLoggedIn to userData.role === "Administrator" */}
       {isLoggedIn && (
         <button
           onClick={handleNewBlogClick}
@@ -55,12 +61,14 @@ const Blog: React.FC<BlogProps> = (props) => {
         </button>
       )}
     </div>
+    </>
   );
 };
 
 // function that runs before page is rendered for retrieving blogs from database. any code in this function will not get
 // run on the client side.
 export async function getStaticProps() {
+  // TODO: make call to images storage bucket and map to each blog
   const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(10));
   const querySnapshot = await getDocs(q);
   let blogList: Blog[] = [];
@@ -74,6 +82,6 @@ export async function getStaticProps() {
       blogs: blogList,
     },
   };
-}
+} 
 
 export default Blog;

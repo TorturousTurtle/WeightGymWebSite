@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 // Import your testing Firebase configuration
-import {firebaseConfig} from './firebase/firebaseConfig';
+import {firebaseConfig} from "../firebase/firebaseConfig";
 import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 

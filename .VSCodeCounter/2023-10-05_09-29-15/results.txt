@@ -1,0 +1,98 @@
+Date : 2023-10-05 09:29:15
+Directory : /Users/benjaminverrill/Code Projects/weightgymsite
+Total : 51 files,  18664 codes, 54 comments, 169 blanks, all 18887 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |     16,711 |          0 |          2 |     16,713 |
+| TypeScript JSX     |         30 |      1,651 |         43 |        121 |      1,815 |
+| TypeScript         |         12 |        200 |          5 |         18 |        223 |
+| CSS                |          1 |         29 |          0 |          5 |         34 |
+| JavaScript         |          3 |         27 |          1 |          6 |         34 |
+| Markdown           |          1 |         25 |          0 |         16 |         41 |
+| JSON with Comments |          2 |         21 |          5 |          1 |         27 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         51 |     18,664 |         54 |        169 |     18,887 |
+| . (Files)                                                                             |          8 |     16,793 |          6 |         24 |     16,823 |
+| components                                                                            |         13 |        433 |          0 |         39 |        472 |
+| components (Files)                                                                    |         12 |        396 |          0 |         34 |        430 |
+| components/blog                                                                       |          1 |         37 |          0 |          5 |         42 |
+| firebase                                                                              |          1 |         17 |          0 |          3 |         20 |
+| interfaces                                                                            |          4 |         60 |          0 |          4 |         64 |
+| pages                                                                                 |         17 |      1,158 |         40 |         72 |      1,270 |
+| pages (Files)                                                                         |         10 |        815 |         10 |         36 |        861 |
+| pages/account                                                                         |          1 |          6 |          0 |          1 |          7 |
+| pages/api                                                                             |          1 |         38 |          0 |          4 |         42 |
+| pages/blog                                                                            |          4 |        293 |         30 |         30 |        353 |
+| pages/shop                                                                            |          1 |          6 |          0 |          1 |          7 |
+| store                                                                                 |          1 |         98 |          3 |         14 |        115 |
+| styles                                                                                |          1 |         29 |          0 |          5 |         34 |
+| test-data                                                                             |          1 |         51 |          0 |          0 |         51 |
+| tests                                                                                 |          4 |         20 |          5 |          7 |         32 |
+| utilities                                                                             |          1 |          5 |          0 |          1 |          6 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                              | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/benjaminverrill/Code Projects/weightgymsite/.eslintrc.json                     | JSON with Comments |          3 |          0 |          1 |          4 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/README.md                          | Markdown           |         25 |          0 |         16 |         41 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/About.tsx               | TypeScript JSX     |          2 |          0 |          1 |          3 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/AppStore.tsx            | TypeScript JSX     |         27 |          0 |          3 |         30 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/AppStoreFooter.tsx      | TypeScript JSX     |         21 |          0 |          3 |         24 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Card.tsx                | TypeScript JSX     |         37 |          0 |          5 |         42 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/ContactForm.tsx         | TypeScript JSX     |          2 |          0 |          1 |          3 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Footer.tsx              | TypeScript JSX     |         57 |          0 |          3 |         60 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Latest.tsx              | TypeScript JSX     |         34 |          0 |          3 |         37 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Layout.tsx              | TypeScript JSX     |         14 |          0 |          3 |         17 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Navbar.test.tsx         | TypeScript JSX     |         18 |          0 |          4 |         22 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Navbar.tsx              | TypeScript JSX     |        151 |          0 |          5 |        156 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Origins.test.tsx        | TypeScript JSX     |          8 |          0 |          1 |          9 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/Origins.tsx             | TypeScript JSX     |         25 |          0 |          2 |         27 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/components/blog/BlogCard.tsx       | TypeScript JSX     |         37 |          0 |          5 |         42 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/firebase/firebaseConfig.js         | JavaScript         |         17 |          0 |          3 |         20 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/interfaces/blog-interface.ts       | TypeScript         |          8 |          0 |          0 |          8 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/interfaces/blog-props-interface.ts | TypeScript         |          4 |          0 |          2 |          6 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/interfaces/user-interface.ts       | TypeScript         |         36 |          0 |          1 |         37 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/interfaces/workout-interface.ts    | TypeScript         |         12 |          0 |          1 |         13 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/next.config.js                     | JavaScript         |          4 |          1 |          2 |          7 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/package-lock.json                  | JSON               |     16,664 |          0 |          1 |     16,665 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/package.json                       | JSON               |         47 |          0 |          1 |         48 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/_app.tsx                     | TypeScript JSX     |         13 |          0 |          2 |         15 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/_document.tsx                | TypeScript JSX     |         12 |          0 |          2 |         14 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/account/index.tsx            | TypeScript JSX     |          6 |          0 |          1 |          7 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/api/contact-form.ts          | TypeScript         |         38 |          0 |          4 |         42 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/Blog.test.tsx           | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/[blogId].tsx            | TypeScript JSX     |        105 |          5 |         14 |        124 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/index.tsx               | TypeScript JSX     |         76 |          3 |          8 |         87 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/blog/new-blog.tsx            | TypeScript JSX     |        101 |         22 |          6 |        129 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/contact.tsx                  | TypeScript JSX     |        104 |          0 |          6 |        110 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/create-account.tsx           | TypeScript JSX     |        168 |          0 |          4 |        172 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/faq.tsx                      | TypeScript JSX     |         17 |          0 |          3 |         20 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/index.tsx                    | TypeScript JSX     |         18 |          0 |          3 |         21 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/login.test.tsx               | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/login.tsx                    | TypeScript JSX     |        127 |         10 |          8 |        145 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/privacypolicy.tsx            | TypeScript JSX     |        194 |          0 |          3 |        197 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/shop/index.tsx               | TypeScript JSX     |          6 |          0 |          1 |          7 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/pages/tos.tsx                      | TypeScript JSX     |        151 |          0 |          3 |        154 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/postcss.config.js                  | JavaScript         |          6 |          0 |          1 |          7 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/store/user-context.tsx             | TypeScript JSX     |         98 |          3 |         14 |        115 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/styles/globals.css                 | CSS                |         29 |          0 |          5 |         34 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tailwind.config.ts                 | TypeScript         |         26 |          0 |          2 |         28 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/test-data/test-blogs.ts            | TypeScript         |         51 |          0 |          0 |         51 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tests/firebase.setup.ts            | TypeScript         |          9 |          2 |          3 |         14 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tests/firebaseAuthMock.ts          | TypeScript         |          0 |          0 |          1 |          1 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tests/jest.config.ts               | TypeScript         |         10 |          3 |          3 |         16 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tests/jest.setup.ts                | TypeScript         |          1 |          0 |          0 |          1 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/tsconfig.json                      | JSON with Comments |         18 |          5 |          0 |         23 |
+| /Users/benjaminverrill/Code Projects/weightgymsite/utilities/image-array.ts           | TypeScript         |          5 |          0 |          1 |          6 |
+| Total                                                                                 |                    |     18,664 |         54 |        169 |     18,887 |
++---------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

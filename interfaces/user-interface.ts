@@ -16,9 +16,9 @@ export interface UserData {
     gender: string;
     goalWeight: string;
     id: string;
-    lastMacrosAdded: Timestamp;
+    lastMacrosAdded: Date;
     lastName: string;
-    masterExerciseList: [];
+    masterExerciseList: string[][];
     numWeeks: number;
     numWorkouts: number;
     premiumUser: boolean;
@@ -27,11 +27,44 @@ export interface UserData {
     totalCalories: number;
     totalWorkouts: number;
     userAge: string;
-    UserFat: string;
+    userFat: string;
     userHeight: string;
     userWeight: string;
-    weekEnd: Timestamp;
-    weekStart: Timestamp;
+    weekEnd: Date;
+    weekStart: Date;
     workoutsForWeek: number;
     role?: string;
 }
+
+// id: uid,
+// email,
+// firstName,
+// lastName,
+// userAge,
+// userHeight,
+// userWeight,
+// goalWeight,
+// calories,
+// fats,
+// carbs,
+// proteins,
+// tdee,
+// userFat,
+// gender,
+// activityLevel,
+// fitnessGoal,
+// exercisePBs,
+// masterExerciseList: [],
+// totalCalories: 0,
+// numWorkouts: 0,
+// totalWorkouts: 0,
+// workoutsForWeek: 0,
+// numWeeks: 0,
+// weekStart,
+// weekEnd,
+// premiumUser,
+// dailyCalories: "0",
+// dailyCarbs: "0",
+// dailyFats: "0",
+// dailyProteins: "0",
+// lastMacrosAdded: new Date(),

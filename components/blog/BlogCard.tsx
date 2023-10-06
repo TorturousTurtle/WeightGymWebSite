@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Blog } from "../../interfaces/blog-interface";
+import { Blog } from "@/interfaces/blog-interface";
 import { imageArray } from "../../utilities/image-array";
 import Image from "next/image";
 import Link from "next/link";

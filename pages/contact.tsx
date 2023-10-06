@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import Head from "next/head";
 
 const Contact = () => {
   const nameTextInputRef = useRef<HTMLInputElement>(null);
@@ -34,6 +35,11 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Head>
+      <title>Weight Gym! - Contact Us</title>
+      <meta name="description" content='Contact us for any fitness related questions or just to tell us how much fun you are having' />
+    </Head>
     <div className="flex flex-col h-screen items-center pb-10">
       <h1 className="text-6xl font-monoton text-wg-green text-center m-8">
         Contact&nbsp;&nbsp;Us
@@ -96,6 +102,7 @@ const Contact = () => {
       </form>
       <ToastContainer />
     </div>
+    </>
   );
 };
 

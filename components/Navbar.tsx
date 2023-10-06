@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { UserContext } from "../store/user-context";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,8 +18,8 @@ const Navbar = () => {
 
   const logOut = () => {
     userCtx.onLogOut();
-    router.push('/');
-  }
+    router.push("/");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,13 +29,16 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
         <div className="flex w-full justify-end items-start">
           {userCtx.isLoggedIn ? (
+            <div>
+            <AccountCircleIcon className="w-10 h-10 text-white hover:text-blue-400 mr-5" />
             <button
-            className="inline-flex items-center bg-wg-blue border-0 py-1 px-3 focus:outline-none hover:bg-wg-green text-white hover:underline rounded text-base mt-4 md:mt-0"
-            onClick={logOut}
-          >
-            Sign Out
-            <ArrowRightIcon className="w-4 h-4 ml-1" />
-          </button>
+              className="inline-flex items-center bg-wg-blue border-0 py-1 px-3 focus:outline-none hover:bg-wg-green text-white hover:underline rounded text-base mt-4 md:mt-0"
+              onClick={logOut}
+            >
+              Sign Out
+              <ArrowRightIcon className="w-4 h-4 ml-1" />
+            </button>
+            </div>
           ) : (
             <Link href="/login">
               <button className="inline-flex items-center bg-wg-blue border-0 py-1 px-3 focus:outline-none hover:bg-wg-green text-white hover:underline rounded text-base mt-4 md:mt-0">
@@ -94,11 +98,19 @@ const Navbar = () => {
               </Link>
               <Link
                 href="/contact"
-                className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-gray-700 pr-5"
+                className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-gray-700"
               >
                 Contact
               </Link>
-              <div className="flex items-center ml-5">
+              {userCtx.isLoggedIn && (
+                <Link
+                  href="/account"
+                  className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-l pl-5 md:border-gray-700"
+                >
+                  Account
+                </Link>
+              )}
+              <div className="flex items-center pl-5">
                 <a
                   href="https://www.facebook.com/WeightGymInc/"
                   target="_blank"
