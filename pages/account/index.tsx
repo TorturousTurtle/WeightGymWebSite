@@ -12,8 +12,7 @@ const Account = () => {
           content="Track your workouts, see your progress, and get ready to get shreddy!"
         />
       </Head>
-      <h1>The Account Page</h1>
-      <p>{userData?.lastName}</p>
+      <h1>The Account Page coming soon!</h1>
       </>
     )
   }
