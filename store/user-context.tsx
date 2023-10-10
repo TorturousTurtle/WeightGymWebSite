@@ -20,7 +20,7 @@ type UserContextType = {
   userData: UserData | undefined;
   userAuth: User | undefined;
   workouts: UserWorkout[] | undefined;
-  onLogin: (user: User) => void;
+  onLogin: (user: string) => void;
   onLogOut: () => void;
   registerUser: (registrationData: RegisterUserData) => void;
 };
@@ -35,7 +35,7 @@ export const UserContext = React.createContext<UserContextType>({
   userData: undefined,
   userAuth: undefined,
   workouts: undefined,
-  onLogin: (user: User) => {},
+  onLogin: (user: string) => {},
   onLogOut: () => {},
   registerUser: (registrationData: RegisterUserData) => {},
 });
@@ -46,16 +46,15 @@ const UserContextProvider: React.FC<UserContextProviderProps> = (
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [id, setId] = useState<string>("");
   const [userData, setUserData] = useState<UserData | undefined>(undefined);
-  const [userAuth, setUserAuth] = useState<User | undefined>(undefined);
+  const [userAuth, setUserAuth] = useState<User | undefined>(undefined); // TODO: see if this is used anywhere and delete it if not
   const [workouts, setWorkouts] = useState<UserWorkout[] | undefined>(
     undefined
   );
 
-  const onLogin = (user: User) => {
-    getUserInfo(user.uid);
-    getUserWorkouts(user.uid);
-    setUserAuth(user);
-    setId(user.uid);
+  const onLogin = (user: string) => {
+    getUserInfo(user);
+    getUserWorkouts(user);
+    setId(user);
     setLoggedIn(true);
   };
 
@@ -79,6 +78,7 @@ const UserContextProvider: React.FC<UserContextProviderProps> = (
     const d = await getDoc(docRef);
     if (d.exists()) {
       const userData: UserData = d.data() as UserData;
+      console.log("user role is: ", userData.role);
       setUserData(userData);
       console.log("User data retrieved");
     } else {

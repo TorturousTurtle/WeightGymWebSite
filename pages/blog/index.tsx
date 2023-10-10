@@ -20,7 +20,7 @@ const Blog: React.FC<BlogProps> = (props) => {
 
   useEffect(() => {
     setBlogList(props.blogs);
-  }, [props.blogs]);
+  }, [props.blogs, userData?.role]);
 
   return (
     <>
@@ -29,38 +29,37 @@ const Blog: React.FC<BlogProps> = (props) => {
       <meta name="description" content='Check out Weight Gyms! blog page to get advice on how to keep your workouts effective but still fun' />
     </Head>
     <div className="flex flex-col p-10">
-      <h1 className="font-monoton text-6xl text-wg-green text-center">
-        The&nbsp;&nbsp;Blog&nbsp;&nbsp;Page
-      </h1>
-      <div className="flex flex-wrap justify-center items-center">
-        {blogList?.map((blog, index) => (
-          <div
-            className={`w-full ${
-              index === 0 ? "md:w-full" : "md:w-1/5"
-            }  mt-10 mx-16 flex justify-center`}
+  <h1 className="font-monoton text-6xl text-wg-green text-center">
+    The&nbsp;&nbsp;Blog&nbsp;&nbsp;Page
+  </h1>
+  <div className="flex flex-wrap justify-center">
+    {blogList?.map((blog, index) => (
+        <div
+            className={`w-full h-full ${
+                index === 0 ? "items-center" : "md:w-1/5 items-center"
+            } mt-10 mx-16 flex flex-col items-start`}
             key={blog.id}
-          >
-            <BlogCard
-              title={blog.title}
-              image={blog.image}
-              id={blog.id}
-              date={blog.date}
-              content={blog.content}
-              index={index}
-            />
-          </div>
-        ))}
-      </div>
-      {/* TODO: - change isLoggedIn to userData.role === "Administrator" */}
-      {isLoggedIn && (
-        <button
-          onClick={handleNewBlogClick}
-          className="fixed top-60 right-20 p-4 bg-wg-green text-white rounded-full hover:bg-wg-blue transition duration-300"
         >
-          <FaPlus className="text-4xl" />
-        </button>
-      )}
-    </div>
+            <BlogCard
+                title={blog.title}
+                image={blog.image}
+                id={blog.id}
+                date={blog.date}
+                content={blog.content}
+                index={index}
+            />
+        </div>
+    ))}
+</div>
+  {userData?.role === "Administrator" && (
+    <button
+      onClick={handleNewBlogClick}
+      className="fixed top-60 right-20 p-4 bg-wg-green text-white rounded-full hover:bg-wg-blue transition duration-300"
+    >
+      <FaPlus className="text-4xl" />
+    </button>
+  )}
+</div>
     </>
   );
 };

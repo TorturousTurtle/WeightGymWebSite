@@ -33,7 +33,7 @@ const LoginScreen = () => {
       signInWithEmailAndPassword(auth, username, password)
         .then((user) => {
           console.log("Signed in successfully!");
-          userCtx.onLogin(user.user);
+          userCtx.onLogin(user.user.uid);
           router.push("/");
         })
         .catch((error) => {
