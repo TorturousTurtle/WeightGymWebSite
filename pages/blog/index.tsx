@@ -67,7 +67,6 @@ const Blog: React.FC<BlogProps> = (props) => {
 // function that runs before page is rendered for retrieving blogs from database. any code in this function will not get
 // run on the client side.
 export async function getStaticProps() {
-  // TODO: make call to images storage bucket and map to each blog
   const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(10));
   const querySnapshot = await getDocs(q);
   let blogList: Blog[] = [];
