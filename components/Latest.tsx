@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const Latest = () => {
   return (
-    <div className="bg-white h-screen/3 w-full items-center mt-5">
+    <div className="bg-white w-full items-center mt-5">
       <h1 className="text-black text-5xl text-center pt-5 font-bold">
         Our Latest and Greatest
       </h1>

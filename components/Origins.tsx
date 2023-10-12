@@ -1,6 +1,6 @@
 const Origins = () => {
   return (
-    <div className="flex flex-col justfy-center items-center">
+    <div className="flex flex-col justfy-center items-center w-full">
       <h1 className="text-6xl font-monoton text-wg-green text-center">Origins</h1>
       <br />
       <div className="w-1/2">

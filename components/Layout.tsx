@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = (props) => {
   return (
-    <div>
+    <div className='min-w-screen min-h-screen'>
       <Navbar />
       <main >{props.children}</main>
       <AppStoreFooter />

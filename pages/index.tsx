@@ -5,7 +5,7 @@ import Origins from "../components/Origins";
 
 const Home = () => {
   return (
-    <>
+    <div className='min-w-screen min-h-screen'>
     <Head>
       <title>Weight Gym! - Home</title>
       <meta name="description" content='Humorous workout clothes and advice to help you think less and health more, thats the Weight Gym! way' />
@@ -13,7 +13,7 @@ const Home = () => {
     <AppStore />
     <Latest />
     <Origins />
-    </>
+    </div>
   );
 };
 
