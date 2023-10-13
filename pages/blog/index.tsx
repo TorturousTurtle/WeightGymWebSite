@@ -36,7 +36,7 @@ const Blog: React.FC<BlogProps> = (props) => {
     {blogList?.map((blog, index) => (
         <div
             className={`w-full h-full ${
-                index === 0 ? "items-center" : "md:w-1/5 items-center"
+                index === 0 ? "w-2/3 items-center" : "md:w-1/5 items-center"
             } mt-10 mx-16 flex flex-col items-start`}
             key={blog.id}
         >

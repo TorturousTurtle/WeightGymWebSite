@@ -16,19 +16,18 @@ const BlogCard: React.FC<Blog> = (props) => {
 
   useEffect(() => {
     setWindWidth(window.innerWidth);
-  }, []);
+  }, []); 
 
   return (
-    <div className="bg-white rounded-md h-[400px] p-5 flex flex-col overflow-hidden">
+    <div className="bg-white rounded-md w-full h-[400px] p-5 flex flex-col overflow-hidden">
     <Link href={"/blog/" + props.id} className="flex flex-col justify-between h-full">
         <div className="flex justify-center mb-auto relative h-2/3 w-full">
             <Image
                 src={url}
                 alt={props.title}
-                width={400}  // Original dimensions of the image
+                width={400} 
                 height={400}
-                className="rounded-md border-2 shadow-md object-cover w-full h-auto p-4" 
-                // Changed to w-full and h-auto to make the image responsive
+                className="rounded-md border-2 shadow-md object-cover object-center w-full h-auto p-4" 
             />
         </div>
         <div className="flex flex-col items-center mt-auto">
