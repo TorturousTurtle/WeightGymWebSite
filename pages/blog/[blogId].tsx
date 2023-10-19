@@ -20,7 +20,7 @@ const formatDate = (dateString: string): string => {
   return date.toLocaleDateString("en-US", options);
 };
 
-const BlogsPage: React.FC = (props) => {
+const BlogsPage: React.FC<BlogProps> = (props) => {
   const [blog, setBlog] = useState<Blog | undefined>(undefined);
   const [createdAt, setCreatedAt] = useState<string>("");
   const [url, setUrl] = useState<string>(imageArray[Math.floor(Math.random() * imageArray.length)]);
