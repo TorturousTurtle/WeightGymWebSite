@@ -5,10 +5,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { UserContext } from "../store/user-context";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -24,20 +25,26 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
+    <>
+    <Head>
+      <title>Weight Gym! - Navbar</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
     <header className="bg-black md:sticky top-0 z-10 md:border-b md:border-wg-green">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
-        <div className="flex w-full justify-end items-start">
+        <div className="md:flex w-full justify-end items-start hidden ">
           {userCtx.isLoggedIn ? (
             <div>
-            <AccountCircleIcon className="w-10 h-10 text-white hover:text-blue-400 mr-5" />
-            <button
-              className="inline-flex items-center bg-wg-blue border-0 py-1 px-3 focus:outline-none hover:bg-wg-green text-white hover:underline rounded text-base mt-4 md:mt-0"
-              onClick={logOut}
-            >
-              Sign Out
-              <ArrowRightIcon className="w-4 h-4 ml-1" />
-            </button>
+              <AccountCircleIcon className="w-10 h-10 text-white hover:text-blue-400 mr-5" />
+              <button
+                className="inline-flex items-center bg-wg-blue border-0 py-1 px-3 focus:outline-none hover:bg-wg-green text-white hover:underline rounded text-base mt-4 md:mt-0"
+                onClick={logOut}
+              >
+                Sign Out
+                <ArrowRightIcon className="w-4 h-4 ml-1" />
+              </button>
             </div>
           ) : (
             <Link href="/login">
@@ -62,7 +69,7 @@ const Navbar = () => {
           </div>
           <div className="menu-div text-center">
             <Link href="/">
-              <h1 className="text-6xl font-monoton text-wg-green">
+            <h1 className="md:text-6xl sm:text-5xl font-monoton text-wg-green">
                 Weight&nbsp;&nbsp;Gym!
               </h1>
               <h2 className="font-monoton text-xl text-wg-green">
@@ -72,7 +79,7 @@ const Navbar = () => {
               </h2>
             </Link>
             <nav
-              className={` flex flex-wrap items-center text-base justify-center ${
+              className={` flex items-center justify-center ${
                 isMenuOpen ? "block" : "hidden md:flex"
               }`}
             >
@@ -98,17 +105,38 @@ const Navbar = () => {
               </Link>
               <Link
                 href="/contact"
-                className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-gray-700"
+                className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-r md:border-gray-700 pr-5"
               >
                 Contact
               </Link>
+              <div className="md:hidden">
               {userCtx.isLoggedIn && (
                 <Link
+                href="/login"
+                className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-gray-700 whitespace-nowrap"
+              >
+                Log In
+              </Link>
+              )}
+              </div>
+              {userCtx.isLoggedIn && (
+                <>
+                <Link
                   href="/account"
-                  className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-l pl-5 md:border-gray-700"
+                  className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-r md:border-gray-700 pr-5"
                 >
                   Account
                 </Link>
+                <div className="md:hidden">
+                  <Link
+                  href=""
+                    className="mr-5 text-xl text-white hover:underline focus:outline-none  md:border-gray-700 whitespace-nowrap"
+                    onClick={logOut}
+                  >
+                    Sign Out
+                  </Link>
+                  </div>
+                </>
               )}
               <div className="flex items-center pl-5">
                 <a
@@ -149,6 +177,7 @@ const Navbar = () => {
         </button>
       </div>
     </header>
+    </>
   );
 };
 

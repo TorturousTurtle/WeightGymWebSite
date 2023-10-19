@@ -1,6 +1,6 @@
 // import { render, screen } from "@testing-library/react";
 // import "@testing-library/jest-dom";
-// import Origins from "./Origins";
+// import Origins from "../components/Origins";
 
 // test("renders Weight Gym! as text", () => {
 //   render(<Origins />);
