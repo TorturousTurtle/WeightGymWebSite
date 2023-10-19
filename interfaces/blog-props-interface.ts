@@ -1,5 +1,6 @@
 import { Blog } from './blog-interface'
 
 export interface BlogProps {
-  blog: Blog;
+  blogs: Blog[];
+  blogImages: { key: string; value: string }[];
 }

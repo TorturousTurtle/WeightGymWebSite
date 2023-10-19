@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import { Blog } from "../../interfaces/blog-interface";
-import { BlogProps } from "../../interfaces/blog-props-interface";
+import { BlogPageProps } from "../../interfaces/blog-page-props-interface";
 import { imageArray } from "../../utilities/image-array";
 import { db } from "@/firebase/firebaseConfig";
 import { collection, query, getDocs, orderBy, limit, where } from "firebase/firestore";
@@ -20,7 +20,7 @@ const formatDate = (dateString: string): string => {
   return date.toLocaleDateString("en-US", options);
 };
 
-const BlogsPage: React.FC<BlogProps> = (props) => {
+const BlogsPage: React.FC<BlogPageProps> = (props) => {
   const [blog, setBlog] = useState<Blog | undefined>(undefined);
   const [createdAt, setCreatedAt] = useState<string>("");
   const [url, setUrl] = useState<string>(imageArray[Math.floor(Math.random() * imageArray.length)]);
