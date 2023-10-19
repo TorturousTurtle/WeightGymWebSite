@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AppStoreFooter = () => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full sm:flex-row flex-col">
         <h1 className="text-white text-2xl m-10">Download our app on the App Store!</h1>
         <a
           target="_blank"

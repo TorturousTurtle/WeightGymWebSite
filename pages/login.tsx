@@ -104,16 +104,16 @@ const LoginScreen = () => {
                 Please provide your email to reset
               </p>
             )}
-            <div className="flex justify-between items-center mt-5">
+            <div className="flex flex-col md:flex-row  justify-between items-center mt-5">
               <button
-                className="bg-blue-500 w-[30%] focus:outline-none hover:bg-wg-green text-white hover:underline py-2 px-4 rounded font-bold"
+                className="bg-blue-500  focus:outline-none hover:bg-wg-green text-white hover:underline py-2 px-4 rounded font-bold"
                 type="submit"
               >
                 Login
               </button>
               <a
                 href="#"
-                className="text-white text-xs font-bold hover:text-green-400"
+                className="text-white text-xs font-bold hover:text-green-400 mt-5 md:mt-0"
                 onClick={handlePasswordReset}
               >
                 Forgot Password?

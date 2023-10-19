@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BlogCard: React.FC<Blog> = (props) => {
-  const [winWidth, setWindWidth] = useState<number>(800);
   const url: string =
     props.index === 0
       ? "/Weight-Gym-Logo.webp"
@@ -13,10 +12,6 @@ const BlogCard: React.FC<Blog> = (props) => {
       ? imageArray[Math.floor(Math.random() * imageArray.length)]
       : props.image;
   const date = new Date(props.date);
-
-  useEffect(() => {
-    setWindWidth(window.innerWidth);
-  }, []); 
 
   return (
     <div className="bg-white rounded-md w-full h-[400px] p-5 flex flex-col overflow-hidden">
@@ -31,10 +26,10 @@ const BlogCard: React.FC<Blog> = (props) => {
             />
         </div>
         <div className="flex flex-col items-center mt-auto">
-            <h1 className="text-gray-900 text-4xl font-bold text-center">
+            <h1 className="text-gray-900 text-2xl md:text-3xl lg-text-4xl font-bold text-center">
                 {props.title}
             </h1>
-            <p className="text-gray-900 mt-4 text-center">
+            <p className="text-gray-900  text-center">
                 Published: {date.toLocaleDateString()}
             </p>
         </div>

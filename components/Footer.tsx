@@ -14,7 +14,7 @@ const Footer = () => {
           alt="Logo"
           width={75}
           height={75}
-          className="rounded-full mt-5"
+          className="sm:flex rounded-full mt-5 hidden"
         />
         <div className="flex flex-col justify-center items-center">
       <div className="container px-5 pt-5 mx-auto flex items-center justify-center sm:flex-row flex-col">

@@ -40,18 +40,18 @@ const Contact = () => {
       <title>Weight Gym! - Contact Us</title>
       <meta name="description" content='Contact us for any fitness related questions or just to tell us how much fun you are having' />
     </Head>
-    <div className="flex flex-col h-screen items-center pb-10">
-      <h1 className="text-6xl font-monoton text-wg-green text-center m-8">
+    <div className="flex flex-col h-screen items-center pb-10 pl-5 pr-5 md:pl-0 md:pr-0">
+      <h1 className="text-4xl md:text-6xl font-monoton text-wg-green text-center m-8">
         Contact&nbsp;&nbsp;Us
       </h1>
       <h1 className="text-4xl text-white text-center font-bold">
         How Can We Help You?
       </h1>
       <form
-        className="bg-gray-200 p-6 mt-6 rounded-lg w-1/2"
+        className="bg-gray-200 p-6 mt-6 rounded-lg w-full md:w-1/2"
         onSubmit={handleSubmit}
       >
-        <div className="w-1/2 mb-4">
+        <div className="w-full md:w-1/2 mb-4">
           <label htmlFor="f-name" className="text-gray-700">
             Name:
           </label>
@@ -64,7 +64,7 @@ const Contact = () => {
             className="block w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring focus:ring-wg-green focus:border-wg-green text-gray-900"
           />
         </div>
-        <div className="w-1/2 mb-4">
+        <div className="w-full md:w-1/2 mb-4">
           <label htmlFor="email" className="text-gray-700">
             Email:
           </label>

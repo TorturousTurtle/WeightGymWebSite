@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <div>
       <Navbar />
-      <main className='w-full'>{props.children}</main>
+      <main>{props.children}</main>
       <AppStoreFooter />
       <Footer />
     </div>

@@ -4,10 +4,10 @@ const AddBlog: React.FC<AddBlogProps> = (props) => {
     return (
         <>
         <form
-          className="bg-gray-200 p-6 mt-6 rounded-lg w-1/2"
+          className="bg-gray-200 p-6 mt-6 rounded-lg md:w-[90%] lg:w-1/2"
           onSubmit={props.handleSubmit}
         >
-        <div className="w-1/2 mb-4">
+        <div className="w-full  mb-4">
             <label htmlFor="f-title" className="text-gray-700">
               Blog Title:
             </label>

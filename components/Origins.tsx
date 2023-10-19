@@ -1,9 +1,9 @@
 const Origins = () => {
   return (
-    <div className="flex flex-col justfy-center items-center w-full">
+    <div className="flex flex-col justfy-center items-center">
       <h1 className="text-6xl font-monoton text-wg-green text-center">Origins</h1>
       <br />
-      <div className="w-1/2">
+      <div className="w-full sm:w-3/4">
       <p className="text-white text-xl break-words m-10">
         Weight Gym! Is about having fun and laughing while still being serious
         about challenging yourself and being healthy. It started when Max, a

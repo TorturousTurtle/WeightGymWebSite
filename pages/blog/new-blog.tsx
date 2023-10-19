@@ -70,16 +70,18 @@ const NewBlog = () => {
         <title>Weight Gym! - Add Blog</title>
         <meta name="description" content="Add new blog here" />
       </Head>
-      <div className="flex flex-col h-screen items-center pb-10">
-        <h1 className="text-6xl font-monoton text-wg-green text-center m-8">
+      <div className="flex flex-col items-center pb-">
+        <h1 className="text-3xl md:text-6xl font-monoton text-wg-green text-center m-8">
           New&nbsp;&nbsp;Blog&nbsp;&nbsp;Entry
         </h1>
+        <div className="flex justify-center w-[90%] md:w-full">
         <AddBlog
           titleTextInputRef={titleTextInputRef}
           messageTextInputRef={messageTextInputRef}
           imageInputRef={imageInputRef}
           handleSubmit={handleSubmit}
         />
+        </div>
         <ToastContainer />
       </div>
     </>

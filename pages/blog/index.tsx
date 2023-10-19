@@ -11,7 +11,8 @@ import Head from "next/head";
 
 const Blog: React.FC<BlogProps> = (props) => {
   const [blogList, setBlogList] = useState<Blog[] | undefined>(undefined);
-  const { isLoggedIn, userData } = useContext(UserContext);
+  const [ sWidth, setScreenWidth ] = useState(0);
+  const { isLoggedIn, userData, screenWidth } = useContext(UserContext);
   const router = useRouter();
 
   const handleNewBlogClick = () => {
@@ -20,46 +21,50 @@ const Blog: React.FC<BlogProps> = (props) => {
 
   useEffect(() => {
     setBlogList(props.blogs);
-  }, [props.blogs, userData?.role]);
+    if(screenWidth) setScreenWidth(screenWidth);
+  }, [props.blogs, userData?.role, screenWidth]);
 
   return (
     <>
-    <Head>
-      <title>Weight Gym! - Blogs</title>
-      <meta name="description" content='Check out Weight Gyms! blog page to get advice on how to keep your workouts effective but still fun' />
-    </Head>
-    <div className="flex flex-col p-10">
-  <h1 className="font-monoton text-6xl text-wg-green text-center">
-    The&nbsp;&nbsp;Blog&nbsp;&nbsp;Page
-  </h1>
-  <div className="flex flex-wrap justify-center">
-    {blogList?.map((blog, index) => (
-        <div
-            className={`w-full h-full ${
-                index === 0 ? "w-2/3 items-center" : "md:w-1/5 items-center"
-            } mt-10 mx-16 flex flex-col items-start`}
-            key={blog.id}
-        >
-            <BlogCard
+      <Head>
+        <title>Weight Gym! - Blogs</title>
+        <meta
+          name="description"
+          content="Check out Weight Gyms! blog page to get advice on how to keep your workouts effective but still fun"
+        />
+      </Head>
+      <div className="flex flex-col lg:p-10 p-5 ">
+        <h1 className="font-monoton text-3xl md:text-6xl sm:text-5xl text-wg-green text-center">
+          The&nbsp;&nbsp;Blog&nbsp;&nbsp;Page
+        </h1>
+        <div className="flex flex-wrap justify-center">
+          {blogList?.map((blog, index) => (
+            <div
+              className={`w-full h-full bg-red-900 ${
+                index === 0 ? "md:w-3/4 items-center" : "md:w-1/5 items-center"
+              } mt-10 lg:mx-16 md:mx-8 flex flex-col items-start`}
+              key={blog.id}
+            >
+              <BlogCard
                 title={blog.title}
                 image={blog.image}
                 id={blog.id}
                 date={blog.date}
                 content={blog.content}
                 index={index}
-            />
+              />
+            </div>
+          ))}
         </div>
-    ))}
-</div>
-  {userData?.role === "Administrator" && (
-    <button
-      onClick={handleNewBlogClick}
-      className="fixed top-60 right-20 p-4 bg-wg-green text-white rounded-full hover:bg-wg-blue transition duration-300"
-    >
-      <FaPlus className="text-4xl" />
-    </button>
-  )}
-</div>
+        {userData?.role === "Administrator" && sWidth > 620 && (
+          <button
+            onClick={handleNewBlogClick}
+            className="fixed top-60 right-20 p-4 bg-wg-green text-white rounded-full hover:bg-wg-blue transition duration-300"
+          >
+            <FaPlus className="text-4xl" />
+          </button>
+        )}
+      </div>
     </>
   );
 };
@@ -80,6 +85,6 @@ export async function getStaticProps() {
       blogs: blogList,
     },
   };
-} 
+}
 
 export default Blog;

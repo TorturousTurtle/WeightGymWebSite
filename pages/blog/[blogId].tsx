@@ -7,6 +7,7 @@ import { db } from "@/firebase/firebaseConfig";
 import { collection, query, getDocs, orderBy, limit, where } from "firebase/firestore";
 import Image from "next/image";
 import Head from "next/head";
+import { GetServerSidePropsContext } from "next";
 
 const formatDate = (dateString: string): string => {
   const options: Intl.DateTimeFormatOptions = {
@@ -19,14 +20,14 @@ const formatDate = (dateString: string): string => {
   return date.toLocaleDateString("en-US", options);
 };
 
-const BlogsPage: React.FC<BlogProps> = (props) => {
+const BlogsPage: React.FC = (props) => {
   const [blog, setBlog] = useState<Blog | undefined>(undefined);
   const [createdAt, setCreatedAt] = useState<string>("");
   const [url, setUrl] = useState<string>(imageArray[Math.floor(Math.random() * imageArray.length)]);
   const [contentBody, setContentBody] = useState<string>("<p>Content not found...</p>");
   const [winWidth, setWindWidth] = useState<number>(800);
   const [winHeight, setWindHeight] = useState<number>(200);
-  const width: number = winWidth * 0.2;
+  const width: number = winWidth > 700 ? winWidth * 0.2 : winWidth * 0.8;
   const height: number = winHeight * 0.1;
   const router = useRouter();
 
@@ -34,7 +35,7 @@ const BlogsPage: React.FC<BlogProps> = (props) => {
   const blogId = router.query.blogId;
 
   useEffect(() => {
-    const foundBlog = props.blogs.find((x) => x.id === blogId);
+    const foundBlog = props.blog;
     const initialDateString = foundBlog ? foundBlog.date.toString() : "";
     const formattedDate = foundBlog ? formatDate(initialDateString) : "";
     const plainTextContent = foundBlog ? foundBlog.content : "Content not found...";
@@ -53,7 +54,7 @@ const BlogsPage: React.FC<BlogProps> = (props) => {
     setContentBody(htmlContent);
     setWindWidth(window.innerWidth);
     setWindHeight(window.innerHeight);
-  }, [blogId, props.blogs, winHeight, winWidth]);
+  }, [blogId, props.blog, winHeight, winWidth]);
 
   return (
     <>
@@ -63,7 +64,7 @@ const BlogsPage: React.FC<BlogProps> = (props) => {
     </Head>
     <div className="flex flex-col bg-white items-center p-10">
       <div className="w-full m-5">
-        <h1 className="text-gray-900 text-6xl font-bold text-center">
+        <h1 className="text-gray-900 text-4xl md:text-6xl font-bold text-center">
           {blog ? blog.title : "Some Blog Here"}
         </h1>
         <h1 className="text-gray-900 text-xl text-center">{createdAt}</h1>
@@ -74,48 +75,38 @@ const BlogsPage: React.FC<BlogProps> = (props) => {
         width={width}
         height={height}
       />
-      <div className="w-1/2">
-      <p className="text-gray-900 break-words m-10" dangerouslySetInnerHTML={{ __html: contentBody }}></p>
+      <div className="w-full md:w-1/2 mt-10">
+      <p className="text-gray-900 break-words m-0 md:m-10 text-justify" dangerouslySetInnerHTML={{ __html: contentBody }}></p>
       </div>
     </div>
     </>
   );
 };
 
-// specify the paths that should be generated at build time
-export async function getStaticPaths() {
-  // TODO: refactor this. too many api calls
-  const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(10));
-  const querySnapshot = await getDocs(q);
-  let blogList: Blog[] = [];
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const { params } = context;
 
-  querySnapshot.forEach((doc) => {
-    const userData = doc.data() as Blog;
-    blogList.push(userData);
-  });
-  const paths = blogList.map((blog) => ({
-    params: { blogId: blog.id },
-  }));
+  if (!params || typeof params.blogId !== 'string') {
+    return {
+      notFound: true,
+    };
+  }
 
-  return {
-    paths,
-    fallback: false,
-  };
-}
+  const { blogId } = params;
+  const blogQuery = query(collection(db, 'blogs'), where('id', '==', blogId));
+  const querySnapshot = await getDocs(blogQuery);
 
-export async function getStaticProps() {
-  // TODO: refactor this
-  const q = query(collection(db, "blogs"), orderBy("date", "desc"), limit(10));
-  const querySnapshot = await getDocs(q);
-  let blogList: Blog[] = [];
+  if (querySnapshot.empty) {
+    return {
+      notFound: true,
+    };
+  }
 
-  querySnapshot.forEach((doc) => {
-    const userData = doc.data() as Blog;
-    blogList.push(userData);
-  });
+  const blogData = querySnapshot.docs[0].data() as Blog;
+  
   return {
     props: {
-      blogs: blogList,
+      blog: blogData,
     },
   };
 }

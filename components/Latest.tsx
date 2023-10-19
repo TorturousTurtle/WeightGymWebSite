@@ -6,7 +6,7 @@ const Latest = () => {
       <h1 className="text-black text-5xl text-center pt-5 font-bold">
         Our Latest and Greatest
       </h1>
-      <div className="container mx-auto flex flex-col md:space-y-0 md:flex-row md:justify-center md:space-x-5 my-20">
+      <div className="container mx-auto flex flex-col md:space-y-0 md:flex-row md:justify-center md:space-x-5 my-20 p-5">
         <Card
           src="/Weight_Gym_OG_Tee.png"
           alt="Weight Gym! OG Tee T-Shirt"
